@@ -7,9 +7,9 @@ const Player = () => {
         <div className="player-container">
             <PlaylistHeader {...headerInfo} />
             {
-                // tracks.map(track => (
-                //     <PlaylistItem {...track}/>
-                // ))
+                tracks.map(track => (
+                    <PlaylistItem {...track} key={track.id} />
+                ))
             }
         </div>
     )   

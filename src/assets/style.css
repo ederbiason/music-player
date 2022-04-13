@@ -100,3 +100,12 @@ a {
     justify-content: center;
     color: var(--dark);
 }
+
+.info h3 {
+    font-size: 2em;
+
+}
+
+.info h6 {
+    font-size: 1em;
+}

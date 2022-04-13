@@ -14,8 +14,8 @@ const PlaylistHeader = ( { title, subtitle }: HeaderProps) => {
                 <img src={playlistCover} alt="playlist cover" className="header-cover" />
 
                 <div className="info">
-                    <h2>{title}</h2>
-                    <h5>{subtitle}</h5>
+                    <h3>{title}</h3>
+                    <h6>{subtitle}</h6>
                 </div>
             </div>
         </div>
