@@ -17,26 +17,29 @@ const Controls = () => {
         <div className="control-container">
             <img src={cover} alt="Cover music" className="current" />
             <div className="buttons-container">
-                <ControlButton>
-                    <img src={prev} alt="back" className="button-icon" />
-                </ControlButton>
+                <div className="buttons-content">
+                    <ControlButton>
+                        <img src={prev} alt="back" className="button-icon" />
+                    </ControlButton>
+                    <ControlButton>
+                        <img src={stop} alt="stop" className="button-icon" />
+                    </ControlButton>
+                    <ControlButton>
+                        <img
+                            src={isPaused ? pause : play}
+                            alt="play/pause"
+                            className="button-icon"
+                            onClick={() => handlePlay()}
+                        />
+                    </ControlButton>
+                    <ControlButton>
+                        <img src={next} alt="next" className="button-icon" />
+                    </ControlButton>
+                </div>
 
-                <ControlButton>
-                    <img src={stop} alt="stop" className="button-icon" />
-                </ControlButton>
-
-                <ControlButton>
-                    <img 
-                        src={isPaused ? pause : play} 
-                        alt="play/pause" 
-                        className="button-icon"
-                        onClick={() => handlePlay()} 
-                    />
-                </ControlButton>
-
-                <ControlButton>
-                    <img src={next} alt="next" className="button-icon" />
-                </ControlButton>
+                <div className="song-slider">
+                    <input type="range" value="0" className="seek-bar"/>
+                </div>
             </div>
         </div>
     )   
