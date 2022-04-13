@@ -15,7 +15,7 @@ export const tracks = [
         id: 2,
         title: "Take on Me",
         albumName: "Hunting High and Low",
-        like: true,
+        like: false,
         cover: require(`../assets/images/cover/takeonme.jpg`),
     },
     {

@@ -20,10 +20,10 @@ const handleLike = () => {
 
 return (
         <div className="music-container">
-            <div className="music content">
+            <div className="music-content">
                 <img src={cover.default} alt={title} className="music-cover" />
                 <div className="music-name">
-                    <h4>{title}</h4> - <h6>{albumName}</h6>
+                    <h4>{title}</h4>&nbsp;-&nbsp;<h6>{albumName}</h6>
                 </div>
                 <button onClick={() => handleLike()} className="button-like">
                     <img src={isLiked ? liked : noliked} alt="like img" className="like" />
